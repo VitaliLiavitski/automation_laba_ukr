@@ -17,15 +17,13 @@ public class Cow extends Animal implements IPets {
 	
 	@Override
 	public String getInfoPet() {
+		
 		String ageStr = String.valueOf(getAge());
 		String infoPet = "Cow: "+ ageStr + " " + getName();
 		return infoPet;
 	}
 
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-		
-	}
+	
+	
 
 }

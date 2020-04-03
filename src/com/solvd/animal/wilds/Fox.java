@@ -15,9 +15,4 @@ public class Fox extends Animal implements IWildAnimal {
 
 	}
 
-	@Override
-	public void run() {
-		
-	}
-
 }

@@ -1,6 +1,6 @@
 package com.solvd.animal;
 
-public abstract class Animal {
+public class Animal {
 
 	private int age = 0;
 	private String name = "default";
@@ -34,8 +34,5 @@ public abstract class Animal {
 	public String getName() {
 		return this.name;
 	}
-	
-	
-	public abstract void run();
 
 }

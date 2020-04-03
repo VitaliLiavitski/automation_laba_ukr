@@ -21,10 +21,6 @@ public class Dog extends Animal implements IPets {
 		return infoPet;
 	}
 
-	@Override
-	public void run() {
-		// TODO Auto-generated method stub
-
-	}
+	
 
 }

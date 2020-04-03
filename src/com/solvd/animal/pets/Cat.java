@@ -5,6 +5,8 @@ import com.solvd.animal.Animal;
 public class Cat extends Animal implements IPets {
 	
 	private String voice = "May";
+	
+	
 	private int count = 0;
 
 	public Cat() {
@@ -29,12 +31,7 @@ public class Cat extends Animal implements IPets {
 		count++;
 		System.out.println(count + " May");
 	}
-	
 
-	@Override
-	public void run() {
-		
-	}
 
 	@Override
 	public String getInfoPet() {
