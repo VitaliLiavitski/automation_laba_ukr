@@ -23,7 +23,10 @@ public class Cow extends Animal implements IPets {
 		return infoPet;
 	}
 
-	
+	@Override
+	public String toString() {
+		return getName();
+	}
 	
 
 }

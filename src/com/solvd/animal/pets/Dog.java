@@ -16,11 +16,16 @@ public class Dog extends Animal implements IPets {
 			
 	@Override
 	public String getInfoPet() {
-		String ageStr = String.valueOf(getAge());
+		String ageStr = String.valueOf(getRandomAge());
 		String infoPet = "Dog: "+ ageStr + " " + getName();
 		return infoPet;
 	}
-
 	
+	
+	@Override
+	public String toString() {
+		return getName();
+		
+	}
 
 }

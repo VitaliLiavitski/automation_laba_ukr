@@ -40,4 +40,11 @@ public class Cat extends Animal implements IPets {
 		return infoPet;
 	}
 	
+	
+	@Override
+	public String toString() {
+		return getName();
+		
+	}
+	
 }
