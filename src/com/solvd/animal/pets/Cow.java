@@ -5,13 +5,15 @@ import com.solvd.animal.Animal;
 public class Cow extends Animal implements IPets {
 
 	
+	public static int count;
+	
 	
 	public Cow(){
-		
 	}
 	
 	public Cow(int age, String name) {
 		super(age, name);
+		count++;
 	}
 	
 	
@@ -26,6 +28,10 @@ public class Cow extends Animal implements IPets {
 	@Override
 	public String toString() {
 		return getName();
+	}
+	
+	public static void printInfoClass() {
+		System.out.println("====" +count + "======");
 	}
 	
 

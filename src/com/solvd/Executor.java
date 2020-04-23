@@ -1,36 +1,30 @@
 package com.solvd;
 
-import java.io.IOException;
-import java.util.InputMismatchException;
-import java.util.Scanner;
 import java.util.Set;
 
 import com.solvd.animal.pets.Cat;
 import com.solvd.animal.pets.Cow;
-import com.solvd.exceptions.CrazyException;
 
 public class Executor {
 
 	public static void main(String[] args)  {
 		
-		Scanner scanner = new Scanner(System.in);
-
-		System.out.println("Before try-catch");
+		
+//		Storage storage = new Storage();
+//		Cow.count = 91;
+//		initCow(10, storage);
 		
 		
-		try {
-			int x = scanner.nextInt();
-			throw new CrazyException();
-			
-		} catch (CrazyException e) {
-			
-			System.out.println(e.getMessage());
-			
-		} finally {
-			System.out.println("finally!");
-		}
 		
-		System.out.println("After try-catch");
+		
+//		storage.printInfoStorage(storage.getListCows());
+		
+		
+		System.out.println("=======================");
+		
+		System.out.println(Math.pow(2, 4));
+		
+		
 		
 	}
 	
@@ -44,14 +38,14 @@ public class Executor {
 		}
 	}
 
-	public static void initCow(int count, Storage storage) throws IOException {
+	public static void initCow(int number, Storage storage) {
 		int age = 10;
-		for (int i = 0; i < count; i++) {
+		for (int i = 0; i < number; i++) {
 			String name = "Burenka" + i;
 			Cow cow = new Cow(age++, name);
 			storage.setCow(cow);
-			Cow cow1 = cow;
-			storage.setCow(cow1);
+//			Cow cow1 = cow;
+//			storage.setCow(cow1);
 		}
 	}
 
