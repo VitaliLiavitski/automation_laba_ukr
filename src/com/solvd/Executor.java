@@ -1,38 +1,75 @@
 package com.solvd;
 
+import java.io.File;
 import java.util.Set;
 
 import com.solvd.animal.pets.Cat;
 import com.solvd.animal.pets.Cow;
+import com.solvd.utils.FirstTh;
 
 public class Executor {
 
-	public static void main(String[] args)  {
+	static String separator = File.separator;
+	static String pathFirst = separator + "Users" + separator + "vliavitski" + separator + "Desktop" + separator + "first.properties";
+	static String pathSecond = separator + "Users" + separator + "vliavitski" + separator + "Desktop" + separator + "second.properties";
+
+	public static void main(String[] args) {
 		
 		
-//		Storage storage = new Storage();
-//		Cow.count = 91;
-//		initCow(10, storage);
+		FirstTh firstTh = new FirstTh();
+		firstTh.start();
 		
+		System.out.println("!!!!!MAIN!!!!!");
+
 		
-		
-		
-//		storage.printInfoStorage(storage.getListCows());
-		
-		
-		System.out.println("=======================");
-		
-		System.out.println(Math.pow(2, 4));
-		
-		
-		
+//		example properties
+//		WRFromProp wrfp = new WRFromProp();
+//		
+//		
+//		System.out.println(wrfp.getValueFromProperties(pathFirst, "bird"));
+//		
+//		
+//		System.out.println("=========");
+//		
+//		
+//		wrfp.setValueToProperties(pathSecond, "date", "30-04-2020");
+//	example
+//		WrittingToFile wrt = new WrittingToFile();
+//
+//		wrt.writeTorFile(path, "Lesson #100500, topic InputOutputFile");
+//
+//		ReadingFromFile rdf = new ReadingFromFile();
+//		String stringFromFile = rdf.readFromFile(path);
+//		String[] arrayStr = stringFromFile.split(" ");
+//
+//		for (String elementStr : arrayStr) {
+//
+//			if ("topic".equals(elementStr)) {
+//				System.out.println(elementStr);
+//			}
+//		}
+//
+//		System.out.println("============");
+//		
+//		for (String elementStr : arrayStr) {
+//
+//			System.out.println(elementStr);
+//		}
 	}
+
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	public static void remove(Set<Cat> cats, String name) {
-		
-		for(Cat cat : cats) {
-			if(cat.getName().equals(name)) {
+
+		for (Cat cat : cats) {
+			if (cat.getName().equals(name)) {
 				cats.remove(cat);
 			}
 		}
