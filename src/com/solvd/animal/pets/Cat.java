@@ -13,6 +13,7 @@ public class Cat extends Animal implements IPets {
 
 	}
 
+
 	public Cat(int age, String name) {
 		super(age, name);
 	}
