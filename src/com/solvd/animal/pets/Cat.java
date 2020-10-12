@@ -9,6 +9,7 @@ public class Cat extends Animal implements IPets {
 	
 	private int count = 0;
 
+
 	public Cat() {
 
 	}
