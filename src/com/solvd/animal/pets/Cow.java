@@ -16,7 +16,7 @@ public class Cow extends Animal implements IPets {
 		count++;
 	}
 
-	
+
 	
 	@Override
 	public String getInfoPet() {
