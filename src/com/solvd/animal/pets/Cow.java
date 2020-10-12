@@ -15,6 +15,7 @@ public class Cow extends Animal implements IPets {
 		super(age, name);
 		count++;
 	}
+
 	
 	
 	@Override
