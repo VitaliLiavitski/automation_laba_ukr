@@ -9,8 +9,7 @@ public class Farm {
 	private IPets pet2;
 
 	private IPets pet3;
-
-	private IPets pet4;
+	
 	
 	
 	public void setPet(IPets pet) {
