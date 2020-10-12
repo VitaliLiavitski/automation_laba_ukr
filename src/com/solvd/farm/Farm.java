@@ -5,6 +5,8 @@ import com.solvd.animal.pets.IPets;
 public class Farm {
 	
 	private IPets pet;
+
+	private IPets pet2;
 	
 	
 	public void setPet(IPets pet) {
