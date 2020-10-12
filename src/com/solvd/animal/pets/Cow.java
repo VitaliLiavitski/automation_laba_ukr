@@ -17,7 +17,6 @@ public class Cow extends Animal implements IPets {
 	}
 
 
-	
 	@Override
 	public String getInfoPet() {
 		
